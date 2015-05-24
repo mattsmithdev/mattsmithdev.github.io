@@ -4,7 +4,7 @@ title: About
 published: true
 ---
 
-![Matt Smith Dev]({{site.baseurl}}/https://avatars0.githubusercontent.com/u/9366487?v=3&s=96) Hi, I'm Matt Smith from Pennsylvania, USA. This site is just a collection of mostly my development related findings. If you find any of the content useful, fantastic. If you don't, at least I hope it didn't put a frown on your face and I will give you back your time once I figure out that pesky space time continuum problem.
+![Matt Smith Dev](https://avatars0.githubusercontent.com/u/9366487?v=3&s=96) Hi, I'm Matt Smith from Pennsylvania, USA. This site is just a collection of mostly my development related findings. If you find any of the content useful, fantastic. If you don't, at least I hope it didn't put a frown on your face and I will give you back your time once I figure out that pesky space time continuum problem.
 
 <script type="text/javascript">
 //<![CDATA[
