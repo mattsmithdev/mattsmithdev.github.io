@@ -8,12 +8,12 @@ relative_permalinks: false
 title:               MJSmithDev
 tagline:             'Development Notes from Matt Smith of PA, USA'
 description:         'A list of development notes (mostly web and .Net) in a vain attempt to keep it all organized. I also run <a href="http://www.clippersoft.net">ClipperSoft</a>.'
-url:                 http://localhost:4000
+url:                 http://mjsmithdev.com
 paginate:            4
 
 # About/contact
 author:
-  name:              Matt Smith
+  name:              Matt J Smith
   url:               http://mjsmithdev.com
   email:             msmith@clippersoft.net
 
