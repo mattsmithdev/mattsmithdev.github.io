@@ -5,6 +5,7 @@ title: ASP.NET 5 How to Easily Add New Bower Dependencies
 tags: asp.net bower
 ---
 
+
 With ASP.NET 5 we have a new way to manage client side libraries, including JavaScript and CSS libraries. Prior to ASP.NET 5, out of the box for client side libraries you could use Nuget or just manually download the files. Problem with Nuget for client side is someone has to maintain that list and there aren't anywhere as many in Nuget as there are in already maintained client side packaging systems. You can always manually download them, but obviously that leads to maintenace issues of keeping updated.
 
 Enter [Bower](http://bower.io/). It handles pulling down and keeping up to date with the latest version of many client side packages. So, lets look at the basics of how Bower works in ASP.NET 5 and how we can add a new client side package.
@@ -25,7 +26,7 @@ If you create a new web project, you'll have a 'bower.json' file that looks like
 
 Let's say in your web project you want to use a [materialize style library](http://materializecss.com/getting-started.html) in your project. You see on the project site it says...
 
-{% highlight %}
+{% highlight JavaScript %}
 bower install materialize
 {% endhighlight %}
 
