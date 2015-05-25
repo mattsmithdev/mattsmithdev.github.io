@@ -6,6 +6,7 @@ tags: asp.net bower
 ---
 
 
+![bower-logo1](https://cloud.githubusercontent.com/assets/9366487/7791585/b9201436-0270-11e5-8305-e331e15d7c89.png)
 With ASP.NET 5 we have a new way to manage client side libraries, including JavaScript and CSS libraries. Prior to ASP.NET 5, out of the box, for client side libraries you could use Nuget or just manually download the files. Problem with Nuget for client side is someone has to maintain that list and there aren't anywhere near as many in Nuget as there are in already maintained client side packaging systems. You can always manually download them, but obviously that leads to maintenace issues of keeping them updated.
 
 Enter [Bower](http://bower.io/). It handles pulling down and keeping up to date with the latest version of many client side packages. So, let's look at the basics of how Bower dependencies works in ASP.NET 5 and how we can add a new client side package.
