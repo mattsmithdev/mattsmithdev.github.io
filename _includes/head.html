@@ -18,9 +18,9 @@
   <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
   
 {% if page.description %}
-  <meta name="description" content="{{ page.description | truncatewords: 200 | strip_newlines | escape_once }}" />
+  <meta name="description" content="{{ page.description | truncatewords: 120 | strip_newlines | escape_once }}" />
 {% else %}
-  <meta name="description" content="{{ content | strip_html | truncatewords: 200 | strip_newlines | escape_once }}" />
+  <meta name="description" content="{{ content | strip_html | truncatewords: 120 | strip_newlines | escape_once }}" />
 {% endif %}
   
   <!-- CSS -->
