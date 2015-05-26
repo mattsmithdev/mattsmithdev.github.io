@@ -6,6 +6,7 @@ tags: asp.net bower
 ---
 
 
+
 ![bower-logo1](https://cloud.githubusercontent.com/assets/9366487/7791585/b9201436-0270-11e5-8305-e331e15d7c89.png)
 With ASP.NET 5 we have a new way to manage client side libraries, including JavaScript and CSS libraries. Prior to ASP.NET 5, out of the box, for client side libraries you could use Nuget or just manually download the files. Problem with Nuget for client side is someone has to maintain that list and there aren't anywhere near as many in Nuget as there are in already maintained client side packaging systems. You can always manually download them, but obviously that leads to maintenace issues of keeping them updated.
 
@@ -48,4 +49,4 @@ bower install materialize
 
 ...The * on the end just specifies to get any/latest version. Bower uses semantic versioning, so you can specify specic versions or ranges of versions that it should use. Just as a side note, to remove a package from being pulled down to the Bower cache, you can simply delete the line under dependencies.
 
-So, that's it right! Nope. Well, sort of. That's enough to pull down the materialize library files into the local Bower cache, but not enough for you to actually be able to use it in your site yet. Next we need to have a process to move the necessary library files from the Bower cache over to your libs directory. That will be handled by another new piece to the ASP.NET world - Gulp. So this post short and sweet, I'll put the Gulp piece in Part 2 of ASP.NET 5 How to Easily Add New Bower Dependencies. I'll also show a great Node.js addition that will make life even easier for adding new client side packages.
+So, that's it right! Nope. Well, sort of. That's enough to pull down the materialize library files into the local Bower cache, but not enough for you to actually be able to use it in your site yet. Next we need to have a process to move the necessary library files from the Bower cache over to your libs directory. That will be handled by another new piece to the ASP.NET world - Gulp. So this post short and sweet, I'll put the [Gulp piece in Part 2 of ASP.NET 5 How to Easily Add New Bower Dependencies](http://mjsmithdev.com/2015/05/25/ASPNET-5-How-to-Add-New-Bower-Libraries-with-Gulp/). I'll also show a great Node.js addition that will make life even easier for adding new client side packages.
