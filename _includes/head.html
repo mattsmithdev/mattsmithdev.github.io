@@ -19,9 +19,21 @@
   
 {% if page.description %}
   <meta name="description" content="{{ page.description | truncatewords: 120 | strip_newlines | escape_once }}" />
+  <meta name="og:description" content="{{ page.description | truncatewords: 120 | strip_newlines | escape_once }}" />
 {% else %}
   <meta name="description" content="{{ content | strip_html | truncatewords: 120 | strip_newlines | escape_once }}" />
+  <meta name="og:description" content="{{ content | strip_html | truncatewords: 120 | strip_newlines | escape_once }}" />
 {% endif %}
+    {% for post in site.posts %}
+      {% assign images = post.content | split:"<img " %}
+      {% for image in images %}
+        {% if image contains 'src' %}
+            {% assign html = image | split:"/>" | first %}
+            <meta property="og:image" content={{ html | replace:'src=','' }}/>
+			{% break %}
+        {% endif %}
+      {% endfor %}
+  {% endfor %}
   
   <!-- CSS -->
   <link rel="stylesheet" href="{{ site.baseurl }}/public/css/poole.css">
