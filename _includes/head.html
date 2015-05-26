@@ -30,7 +30,7 @@
       {% for image in images %}
         {% if image contains 'src' %}
             {% if foundImage == 0 %}
-                {% assign html = image | split:"/>" | first %}
+                {% assign html = image | split:"alt=" | first %}
                 <meta property="og:image" content={{ html | replace:'src=','' }}/>
                 {% assign foundImage = 1 %}
             {% endif %}
