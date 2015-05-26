@@ -24,13 +24,16 @@
   <meta name="description" content="{{ content | strip_html | truncatewords: 120 | strip_newlines | escape_once }}" />
   <meta name="og:description" content="{{ content | strip_html | truncatewords: 120 | strip_newlines | escape_once }}" />
 {% endif %}
-    {% for post in site.posts %}
+  {% for post in site.posts %}
+      {% assign foundImage = 0 %}
       {% assign images = post.content | split:"<img " %}
       {% for image in images %}
         {% if image contains 'src' %}
-            {% assign html = image | split:"/>" | first %}
-            <meta property="og:image" content={{ html | replace:'src=','' }}/>
-			{% break %}
+            {% if foundImage == 0 %}
+                {% assign html = image | split:"/>" | first %}
+                <meta property="og:image" content={{ html | replace:'src=','' }}/>
+                {% assign foundImage = 1 %}
+            {% endif %}
         {% endif %}
       {% endfor %}
   {% endfor %}
