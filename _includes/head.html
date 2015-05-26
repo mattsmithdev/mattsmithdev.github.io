@@ -19,10 +19,10 @@
   
 {% if page.description %}
   <meta name="description" content="{{ page.description | truncatewords: 120 | strip_newlines | escape_once }}" />
-  <meta name="og:description" content="{{ page.description | truncatewords: 120 | strip_newlines | escape_once }}" />
+  <meta property="og:description" content="{{ page.description | truncatewords: 120 | strip_newlines | escape_once }}" />
 {% else %}
   <meta name="description" content="{{ content | strip_html | truncatewords: 120 | strip_newlines | escape_once }}" />
-  <meta name="og:description" content="{{ content | strip_html | truncatewords: 120 | strip_newlines | escape_once }}" />
+  <meta property="og:description" content="{{ content | strip_html | truncatewords: 120 | strip_newlines | escape_once }}" />
 {% endif %}
   {% for post in site.posts %}
       {% assign foundImage = 0 %}
