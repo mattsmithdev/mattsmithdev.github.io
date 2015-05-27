@@ -1,7 +1,8 @@
 ---
-published: false
+published: true
 title: Solving 404.8 IIS Errors when Loading Your Client Side Libraries
 ---
+
 
 Just ran into a problem trying to get the [MaterializeCSS](http://materializecss.com/) library working in Visual Studio 2015. It would refuse to load the CSS/JavaScript. I'm pulling in Materialize via Bower/Gulp. The main files are under 'materialize/bin'.
 
