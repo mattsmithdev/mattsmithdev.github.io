@@ -4,6 +4,8 @@ layout: post
 title: ASP.NET MVC 6 and the Infinite Scroll
 tags: asp.net mvc jquery
 ---
+
+![infinity](https://cloud.githubusercontent.com/assets/9366487/7947574/f022d450-094b-11e5-829c-5882444e6445.gif)
 When we have long lists of items, it's nice to present the users with the option to page them, instead of showing them all at once. You can use your standard pager, which works great with something like a table list, or you might be able to try something called "infinite scrolling". Infinite scrolling is that feature where you start scrolling to the bottom of the page and it automagically loads more data for you. So, it's like paging but using the browser scroll bar. I've been doing a redesign of a book listing site, and instead of just providing the standard pager, I thought it would be nice to let them just keep on going.
 
 So, where do we start? This post is written using ASP.NET 5 (MVC 6), but the code is basically the same in older versions of ASP.NET MVC. To do the infinite scrolling, we'll be using a JQuery plugin called "[jScroll](http://jscroll.com/)" written by Philip Klauzinski. To pull down a client side library in ASP.NET 5, we open up our bower.json file and just add in the library name and version, as such...
@@ -85,4 +87,4 @@ Inside our controller, we now need to add a call for the 'booklist?page=' route 
 {% endhighlight %}
 ...You can see this method is called by the 'booklist' route and accepts one parameter called 'page'. The first thing we do is call our list of books from our EF context. After doing some initializing, we next do some checks on what range to display. Our first check is to see if given the pagenumber * the pageSize will go beyond the number of books available. If so, then we've reached the end and return an EmptyResult. The next if-else check will see if we have a full set of pageSize to display or just whatever is left. We then grab that range from the list. Finally we update the ViewBag.Page count and display the partial view.
 
-If all goes well, you'll now get another UL list displayed in the brower, just by scrolling down. 
+If all goes well, you'll now get another UL list displayed in the brower, just by scrolling down.
