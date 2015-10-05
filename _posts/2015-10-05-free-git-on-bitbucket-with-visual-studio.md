@@ -2,6 +2,7 @@
 published: false
 layout: post
 tags: visual studio git
+title: Free Git on Bitbucket with Visual Studio
 ---
 
 ![gwindows_logo](https://cloud.githubusercontent.com/assets/9366487/10289394/15e90efc-6b6c-11e5-9fa3-e4510cf375b8.png)
