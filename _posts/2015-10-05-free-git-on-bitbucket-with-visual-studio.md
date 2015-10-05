@@ -1,9 +1,10 @@
 ---
-published: false
+published: true
 layout: post
 tags: visual studio git
 title: Free Git on Bitbucket with Visual Studio
 ---
+
 
 ![gwindows_logo](https://cloud.githubusercontent.com/assets/9366487/10289394/15e90efc-6b6c-11e5-9fa3-e4510cf375b8.png)
 Today I'm sharing for my own memory banks how to add a new Visual Studio solution/project to Git source control. If you've heard of Git, you've probably heard of Github, which hosts roughly a zillion git repositories. One problem with Github (at least as of now) is that they don't offer private repositories for free, only public ones. If you don't want to pay for your little side projects to be hosted in a private repository, what is a poor dev to do? Simple, use [Bitbucket](https://bitbucket.org/) instead. With Bitbucket you can host private repositories with a free account.
@@ -25,5 +26,3 @@ https://{username}@bitbucket.org/{username}/{repository}.git
 10. You're done. (Had to make it a nice even 10 steps).
 
 Now, if you check in Bitbucket, you'll see the source control is now in the repository. A big thanks to my past self for writing this up from my future self (now present self).
-
-
